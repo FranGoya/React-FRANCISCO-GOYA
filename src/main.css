@@ -1,0 +1,16 @@
+.counter {
+    padding: 4px;
+    outline: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bolder;
+
+    
+}
+
+box {
+    outline: auto;
+    padding: 4px;
+    align-items: center;
+}
