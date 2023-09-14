@@ -2,16 +2,18 @@ import React from 'react'
 import ItemList from './ItemList';
 
 
-const ItemListContainer = ({ greeting}) => {
+const ItemListContainer = () => {
+
+  
   const productos =[
-    {id:1 ,nombre:"Gollum" ,descripcion: "descripcion de producto",precio:1000},
-    {id:2 ,nombre:"Producto B" ,descripcion: "descripcion de producto",precio:1500},
-    {id:3 ,nombre:"Producto C" ,descripcion: "descripcion de producto",precio:2000},
-    {id:4 ,nombre:"Producto C" ,descripcion: "Flautas dulces",precio:2000},
-    {id:5 ,nombre:"Producto C" ,descripcion: "descripcion de producto",precio:2000},
-    {id:6 ,nombre:"Producto C" ,descripcion: "descripcion de producto",precio:2000},
-    {id:7 ,nombre:"Producto C" ,descripcion: "descripcion de producto",precio:2000},
-    {id:8 ,nombre:"Producto C" ,descripcion: "descripcion de producto",precio:2000},
+    {id:1 ,nombre:"Gollum" ,descripcion: "descripcion de producto",categoria:"peliculas" ,precio:1000},
+    {id:2 ,nombre:"Sauron" ,descripcion: "descripcion de producto",categoria:"peliculas" ,precio:1500},
+    {id:3 ,nombre:"Producto C" ,descripcion: "descripcion de producto",categoria:"peliculas" ,precio:2000},
+    {id:4 ,nombre:"Producto C" ,descripcion: "Flautas dulces",categoria:"video juegos" ,precio:2000},
+    {id:5 ,nombre:"Producto C" ,descripcion: "descripcion de producto", categoria:"video juegos",precio:2000},
+    {id:6 ,nombre:"Producto C" ,descripcion: "descripcion de producto",categoria:"otros" ,precio:2000},
+    {id:7 ,nombre:"Producto C" ,descripcion: "descripcion de producto",categoria:"otros" ,precio:2000},
+    {id:8 ,nombre:"Producto C" ,descripcion: "descripcion de producto",categoria:"otros" ,precio:2000},
   ]
   
 
@@ -37,7 +39,9 @@ getProductos
 
 return (
   <>
-    <ItemList productos={productos} />  </>
+    <ItemList productos={productos} /> 
+    
+     </>
 );
 };
 
