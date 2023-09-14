@@ -33,9 +33,9 @@ const NavBar = () => {
     Categorias
   </MenuButton>
   <MenuList>
-    <MenuItem>Peliculas</MenuItem>
-    <MenuItem>Video Juegos</MenuItem>
-    <MenuItem>Otros</MenuItem>
+  <MenuItem><Link to={`/categoria/${"peliculas"}`}>Pelicuas</Link></MenuItem>
+                <MenuItem><Link to={`/categoria/${"video juegos"}`}>Video Juegos</Link></MenuItem>
+                <MenuItem><Link to={`/categoria/${"otros"}`}>Otros</Link></MenuItem>
     <MenuItem></MenuItem>
     <MenuItem></MenuItem>
   </MenuList>

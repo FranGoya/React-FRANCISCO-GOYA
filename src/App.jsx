@@ -9,6 +9,8 @@ import ItemList from './components/ItemList'
 import ItemDetail from "./components/ItemDetail";
 import Home from './components/Home'
 
+
+
 const App = () => {
   return (
     <>
@@ -18,8 +20,9 @@ const App = () => {
         <Routes>
         <Route exact path="/cart" element={<Home />} />
         <Route exact path="/cart" element={<Cart />} />
-        <Route exact path="/" element={<ItemListContainer/>}/>
+        
         <Route path="/categoria/:categoria" element={<ItemListContainer/>}/>
+        <Route exact path="/item/:id" element={<ItemDetailContainer/>}/>
         </Routes>
       </BrowserRouter>
 

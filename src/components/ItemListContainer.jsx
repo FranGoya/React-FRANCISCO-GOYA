@@ -1,10 +1,11 @@
 import React from 'react'
 import ItemList from './ItemList';
+import { useParams } from "react-router-dom";
 
 
 const ItemListContainer = () => {
 
-  
+  const {categoria} = useParams ()
   const productos =[
     {id:1 ,nombre:"Gollum" ,descripcion: "descripcion de producto",categoria:"peliculas" ,precio:1000},
     {id:2 ,nombre:"Sauron" ,descripcion: "descripcion de producto",categoria:"peliculas" ,precio:1500},
@@ -35,15 +36,15 @@ getProductos
   console.log(error);
 });
 
-
+const productosFiltrados = productos.filter((producto) => producto.categoria === categoria)
 
 return (
-  <>
-    <ItemList productos={productos} /> 
-    
-     </>
+
+  categoria ? <ItemList productos={productosFiltrados} /> : <ItemList productos={productos} />
+
 );
 };
+
 
 
 export default ItemListContainer
